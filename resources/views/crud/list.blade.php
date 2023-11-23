@@ -9,10 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="/img/logo-home-page.png" rel="icon">
-  <link href="/img/logo-home-page.png" rel="logo-icon">
-
   <!-- Vendor CSS Files -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -20,12 +16,12 @@
   <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top bg-image" style="background-image: url(/img/home-bg.jpg)">
+  <header id="header" class="fixed-top bg-image" style="background-image: url(/home-bg.jpg)">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="/">Younnie</a></h1>
   <!-- ======= Start Navbar ======= -->
@@ -55,9 +51,7 @@
           <th>Nama Lengkap</th>
           <th>Umur</th>
           <th>Jenis Kelamin</th>
-          <th>Fakultas</th>
-          <th>Program Studi</th>
-          <th>E-mail</th>
+          <th>Alamat</th>
           <th>Hobi</th>
           <th>Action</th>
         </tr>
@@ -71,10 +65,8 @@
             <td>{{ $mahasiswa->nim }}</td>
             <td>{{ $mahasiswa->fullname }}</td>
             <td>{{ $mahasiswa->umur }}</td>
-            <td>{{ $mahasiswa->jeniskelamin }}</td>
-            <td>{{ $mahasiswa->fakultas }}</td>
-            <td>{{ $mahasiswa->prodi }}</td>
-            <td>{{ $mahasiswa->email }}</td>
+            <td>{{ $mahasiswa->gender }}</td>
+            <td>{{ $mahasiswa->alamat }}</td>
             <td>{{ $mahasiswa->hobi }}</td>
             <td>
               <form action="/mahasiswa/{{ $mahasiswa->id }}/edit" method="GET">
@@ -105,7 +97,7 @@
   <script src="/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/js/main.js"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>

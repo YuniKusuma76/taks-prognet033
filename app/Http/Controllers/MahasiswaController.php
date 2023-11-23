@@ -33,10 +33,8 @@ class MahasiswaController extends Controller
         $mahasiswa->nim = $request->nim;
         $mahasiswa->fullname = $request->fullname;
         $mahasiswa->umur = $request->umur;
-        $mahasiswa->jeniskelamin = $request->jeniskelamin;
-        $mahasiswa->fakultas = $request->fakultas;
-        $mahasiswa->prodi = $request->prodi;
-        $mahasiswa->email = $request->email;
+        $mahasiswa->gender = $request->gender;
+        $mahasiswa->alamat = $request->alamat;
         $mahasiswa->hobi = $request->hobi;
         $mahasiswa->save();
         return redirect('/mahasiswa');
@@ -66,10 +64,8 @@ class MahasiswaController extends Controller
         $mahasiswa->nim = $request->nim;
         $mahasiswa->fullname = $request->fullname;
         $mahasiswa->umur = $request->umur;
-        $mahasiswa->jeniskelamin = $request->jeniskelamin;
-        $mahasiswa->fakultas = $request->fakultas;
-        $mahasiswa->prodi = $request->prodi;
-        $mahasiswa->email = $request->email;
+        $mahasiswa->gender = $request->gender;
+        $mahasiswa->alamat = $request->alamat;
         $mahasiswa->hobi = $request->hobi;
         $mahasiswa->save();
         return redirect('/mahasiswa');

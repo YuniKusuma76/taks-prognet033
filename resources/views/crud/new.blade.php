@@ -9,10 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="/img/logo-home-page.png" rel="icon">
-  <link href="/img/logo-home-page.png" rel="logo-icon">
-
   <!-- Vendor CSS Files -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -20,12 +16,12 @@
   <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top bg-image" style="background-image: url(/img/home-bg.jpg)">
+  <header id="header" class="fixed-top bg-image" style="background-image: url(/home-bg.jpg)">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="/">Younnie</a></h1>
   <!-- ======= Start Navbar ======= -->
@@ -66,32 +62,18 @@
               <label><strong>Umur :</strong></label>
               <input type="text" name="umur" id="umur" placeholder="Umur" class="form-control">
             </div>
-            <div>
+            <div class="form-group mb-3">
               <label><strong>Jenis Kelamin :</strong></label>
-              <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Laki - Laki'>Male</p>
-              <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Perempuan'>Female</p>
-              <p><input class="me-1" type='radio' name='jeniskelamin' id="jeniskelamin" value='Tidak Ingin Memberi Tahu'>Other</p>
-            </div>
-            <div class="form-group mb-3">
-              <label><strong>Fakultas :</strong></label>
-              <input type="text" name="fakultas" id="fakultas" placeholder="Fakultas" class="form-control">
-            </div>
-            <div class="form-group mb-3">
-              <label><strong>Program Studi :</strong></label>
-                <select name="prodi" id="prodi" class="form-control">
-                  <option selected>Pilih Program Studi</option>
-                  <option value="S1 Arsitektur">S1 Arsitektur</option>
-                  <option value="S1 Teknik Sipil">S1 Teknik Sipil</option>
-                  <option value="S1 Teknik Mesin">S1 Teknik Mesin</option>
-                  <option value="S1 Teknik Elektro">S1 Teknik Elektro</option>
-                  <option value="S1 Teknologi Informasi">S1 Teknologi Informasi</option>
-                  <option value="S1 Teknik Industri">S1 Teknik Industri</option>
-                  <option value="S1 Teknik Lingkungan">S1 Teknik Lingkungan</option>
+                <select name="gender" id="gender" class="form-control">
+                  <option selected>--Pilih--</option>
+                  <option value="Laki - Laki">Male</option>
+                  <option value="Perempuan">Female</option>
+                  <option value="Tidak Ingin Memberi Tahu">Other</option>
                 </select>
             </div>
             <div class="form-group mb-3">
-              <label><strong>Email :</strong></label>
-              <input type="email" name="email" id="email" placeholder="name@example.com" class="form-control">
+              <label><strong>Alamat :</strong></label>
+              <input type="text" name="alamat" id="alamat" placeholder="Alamat" class="form-control">
             </div>
             <div class="form-group mb-3">
               <label><strong>Hobi :</strong></label>
@@ -124,33 +106,15 @@
               return false;
           }
           // Validasi Jenis Kelamin
-          var jeniskelamin = document.getElementsByName('jeniskelamin');
-          var genValue = false;
-          for (var i = 0; i < jeniskelamin.length; i++) {
-              if (jeniskelamin[i].checked == true) {
-                  genValue = true;
-              }
-          }
-          if (!genValue) {
+          if (document.forms["formBiodata"]["gender"].selectedIndex < 1) {
               alert("Anda belum memilih Jenis Kelamin Anda");
-              return false;
-          }
-          // Validasi Fakultas
-          if (document.forms["formBiodata"]["fakultas"].value == "") {
-              alert("Anda belum memasukkan Fakultas Anda");
-              document.forms["formBiodata"]["fakultas"].focus();
-              return false;
-          }
-          // Validasi Program Studi
-          if (document.forms["formBiodata"]["prodi"].selectedIndex < 1) {
-              alert("Anda belum memilih Program Studi Anda");
-              document.forms["formBiodata"]["prodi"].focus();
+              document.forms["formBiodata"]["gender"].focus();
               return false;
           }
           // Validasi E-mail
-          if (document.forms["formBiodata"]["email"].value == "") {
-              alert("Anda belum memasukkan E-mail Anda");
-              document.forms["formBiodata"]["email"].focus();
+          if (document.forms["formBiodata"]["alamat"].value == "") {
+              alert("Anda belum memasukkan Alamat Anda");
+              document.forms["formBiodata"]["alamat"].focus();
               return false;
           }
           // Validasi Hobi
@@ -175,7 +139,7 @@
   <script src="/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/js/main.js"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>

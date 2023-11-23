@@ -9,10 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="/img/logo-home-page.png" rel="icon">
-  <link href="/img/logo-home-page.png" rel="logo-icon">
-
   <!-- Vendor CSS Files -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -20,12 +16,12 @@
   <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
 </head>
 
 <body>
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top bg-image" style="background-image: url(/img/home-bg.jpg)">
+  <header id="header" class="fixed-top bg-image" style="background-image: url(/home-bg.jpg)">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="/">Younnie</a></h1>
   <!-- ======= Start Navbar ======= -->
@@ -71,22 +67,11 @@
               {{-- Kolom Fakultas --}}
               <tr>
                 <td>Jenis Kelamin</td>
-                <td>{{ $data->jeniskelamin }}</td>
+                <td>{{ $data->gender }}</td>
               </tr>
-              {{-- Kolom Program Studi --}}
               <tr>
-                <td>Fakultas</td>
-                <td>{{ $data->fakultas }}</td>
-              </tr>
-              {{-- Kolom Tanggal Lahir --}}
-              <tr>
-                <td>Program Studi</td>
-                <td>{{ $data->prodi }}</td>
-              </tr>
-              {{-- Kolom E-mail --}}
-              <tr>
-                <td>E-mail</td>
-                <td>{{ $data->email }}</td>
+                <td>Alamat</td>
+                <td>{{ $data->alamat }}</td>
               </tr>
               {{-- Kolom Hobi --}}
               <tr>
@@ -103,21 +88,6 @@
 
 </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer class="bg-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Portofolio</strong>. All Rights Reserved</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- ======= End  Footer ======= -->
-
   <!-- Vendor JS Files -->
   <script src="/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -127,7 +97,7 @@
   <script src="/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/js/main.js"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>

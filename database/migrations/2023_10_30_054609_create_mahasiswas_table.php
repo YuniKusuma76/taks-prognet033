@@ -16,11 +16,9 @@ return new class extends Migration
             $table->string('nim', 10);
             $table->string('fullname', 100);
             $table->integer('umur');
-            $table->enum('jeniskelamin', ['Laki - Laki', 'Perempuan', 'Tidak Ingin Memberi Tahu']);
-            $table->string('fakultas', 50);
-            $table->string('prodi', 50);
-            $table->string('email', 50);
-            $table->string('hobi', 50);
+            $table->enum('gender', ['Laki - Laki', 'Perempuan', 'Tidak Ingin Memberi Tahu'])->default('Laki - Laki');
+            $table->string('alamat', 100)->nullable(true);
+            $table->string('hobi', 100);
             $table->timestamps();
         });
     }

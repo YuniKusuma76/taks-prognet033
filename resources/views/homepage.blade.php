@@ -9,10 +9,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="/img/logo-home-page.png" rel="icon">
-  <link href="/img/logo-home-page.png" rel="logo-icon">
-
   <!-- Vendor CSS Files -->
   <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -20,7 +16,7 @@
   <link href="/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/css/style.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +39,7 @@
   <!-- ======= End Header ======= -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(/img/home-bg.jpg)">
+  <div id="hero" class="hero route bg-image" style="background-image: url(/home-bg.jpg)">
    <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
@@ -67,19 +63,21 @@
         <div class="col-sm-12">
           <div class="box-shadow-full">
             <div class="row">
+              <div class="title-box-2">
+                <h5 class="title-left text-center">About me</h5>
+              </div>
               <div class="col-md-6">
                 <div class="row">
-                  <div class="col-sm-6 col-md-5">
+                  <div class="col-sm-6 col-md-6">
                     <div class="about-img">
-                      <img src="/img/foto-profile.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      <img src="/img.jpg" class="img-fluid rounded b-shadow-a" alt="">
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Nickname: </span> <span>Yuni Kusuma</span></p>
-                      <p><span class="title-s">NIM: </span> <span>2205551033</span></p>
-                      <p><span class="title-s">Kelas: </span> <span>Pemrograman Internet A</span></p>
-                      <p><span class="title-s">Angkatan: </span> <span>2022</span></p>
+                  <div class="col-sm-6 col-md-6">
+                    <div class="about-info mt-5">
+                        <p><a href="https://instagram.com/yunikusuma12__"><i class='bi bi-instagram'> Instagram</i></a></p>
+                        <p><a href="https://github.com/YuniKusuma76"><i class='bi bi-github'> GitHub</i></a></p>
+                        <p><a href="https://www.youtube.com/@younniebali"><i class='bi bi-youtube'> YouTube</i></a></p>
                     </div>
                   </div>
                 </div>
@@ -90,12 +88,7 @@
                       <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
 
-                    <span>Dance</span> <span class="pull-right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-
-                    <span>Write</span> <span class="pull-right">60%</span>
+                    <span>Write</span> <span class="pull-right">75%</span>
                     <div class="progress">
                       <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -108,33 +101,19 @@
                 </div>
                 <div class="col-md-6">
                   <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                  <p class="lead">
-                    <strong>Nama</strong> : Ni Putu Yuni Kusumayanti
-                  </p>
-                  <p class="lead">
-                    <strong>Umur</strong> : 18 tahun
-                  </p>
-                  <p class="lead">
-                    <strong>Tanggal Lahir</strong> : 02 Desember 2004
-                  </p>
-                  <p class="lead">
-                    <strong>Alamat</strong> : Dusun Umanyar, Desa Tamanbali, Bangli
-                  </p>
+                  <p class="lead"><strong>Nama</strong>: Ni Putu Yuni Kusumayanti</p>
+                  <p class="lead"><strong>Nickname</strong> : Yuni Kusuma</p>
+                  <p class="lead"><strong>Umur</strong> : 18 tahun</p>
+                  <p class="lead"><strong>Tanggal Lahir</strong> : 02 Desember 2004</p>
+                  <p class="lead"><strong>Alamat</strong> : Dusun Umanyar, Desa Tamanbali, Bangli</p>
                   <br>
-                  <p class="lead">
-                    <strong>E-mail</strong> : yunikusumayanti02@gmail.com
-                  </p>
-                  <p class="lead">
-                    <strong>Instagram</strong> : yunikusuma12__
-                  </p>
-                  <p class="lead">
-                    <strong>Motto</strong> : Berjalan seperti air, bergerak seperti angin
-                  </p>
+                  <p class="lead"><strong>NIM</strong> : 2205551033</p>
+                  <p class="lead"><strong>Program Studi</strong> : Teknologi Informasi</p>
+                  <p class="lead"><strong>Fakultas</strong> : Teknik</p>
+                  <p class="lead"><strong>Universitas</strong> : Universitas Udayana</p>
+                  <br>
+                  <p class="lead"><strong>E-mail</strong> : yunikusumayanti02@gmail.com</p>
+                  <p class="lead"><strong>Motto</strong> : Berjalan seperti air, bergerak seperti angin</p>
                 </div>
               </div>
             </div>
@@ -144,52 +123,6 @@
     </div>
   </section>
   <!-- ======= End About Section ======= -->
-
-  <!-- ======= Testimonials Section ======= -->
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(/img/quote-bg.jpg)">
-    <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-                <!-- Start Quote -->
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="/img/ricard-foto.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Richard Branson</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Jangan malu dengan kegagalanmu, belajarlah darinya dan mulai lagi.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="/img/albert-foto.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Albert Einstein</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Anda hanya gagal saat Anda berhenti mencoba.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Quote -->
-              </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- ======= End Testimonials Section ======= -->
 
   <!-- ======= Taks Section ======= -->
   <section id="taks" class="services-mf pt-5 route">
@@ -270,7 +203,7 @@
   <script src="/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/js/main.js"></script>
+  <script src="/main.js"></script>
 </body>
 
 </html>
